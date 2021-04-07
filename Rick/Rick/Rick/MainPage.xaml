@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rick.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="Ingreso" Placeholder="ingrese el id del personaje"></Entry>
+        <Button Text="Llamar API" Clicked="Button_Clicked"/>
+		<TableView Intent="Settings">
+			<TableRoot>
+				<TableSection Title="Resultado">
+					<ViewCell>
+						<StackLayout Orientation="Horizontal">
+							<Label Text="Nombre"
+                                 TextColor="Gray" />
+							<Label x:Name="Nombre1"
+                                 HorizontalOptions="EndAndExpand"
+                                 TextColor="Black" />
+						</StackLayout>
+					</ViewCell>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal">
+							<Label Text="Status"
+                                 TextColor="Gray" />
+							<Label x:Name="Status1"
+                                 HorizontalOptions="EndAndExpand"
+                                 TextColor="Black" />
+						</StackLayout>
+					</ViewCell>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal">
+							<Label Text="Species"
+                                 TextColor="Gray" />
+							<Label x:Name="Species1"
+                                 HorizontalOptions="EndAndExpand"
+                                 TextColor="Black" />
+						</StackLayout>
+					</ViewCell>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal">
+							<Label Text="Tipo"
+                                 TextColor="Gray" />
+							<Label x:Name="Tipo1"
+                                 HorizontalOptions="EndAndExpand"
+                                 TextColor="Black" />
+						</StackLayout>
+					</ViewCell>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal">
+							<Label Text="Genero"
+                                 TextColor="Gray" />
+							<Label x:Name="Genero1"
+                                 HorizontalOptions="EndAndExpand"
+                                 TextColor="Black" />
+						</StackLayout>
+					</ViewCell>
+				</TableSection>
+			</TableRoot>
+		</TableView>
+    </StackLayout>
+
+</ContentPage>
